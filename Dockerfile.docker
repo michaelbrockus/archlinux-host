@@ -23,7 +23,7 @@ RUN pacman -Sy --noconfirm archlinux-keyring && pacman -Syu --noconfirm \
        gcc-fortran \
        rust \
        mono \
-       ncurse \
+       ncurses \
        mesa \
        java-environment=11 \
        git \
