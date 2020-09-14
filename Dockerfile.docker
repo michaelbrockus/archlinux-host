@@ -28,7 +28,7 @@ RUN pacman -Sy --noconfirm archlinux-keyring && pacman -Syu --noconfirm \
        git \
        cppcheck \
        ruby \
-       rake
+       rake \
     && ln -s /usr/lib/systemd/systemd /sbin/init
 
 RUN gem install \
