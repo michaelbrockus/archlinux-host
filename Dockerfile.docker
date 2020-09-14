@@ -11,7 +11,7 @@ ENV CI 1
 ADD run_tests.py .
 
 RUN pacman -Sy --noconfirm archlinux-keyring && pacman -Syu --noconfirm \
-    && pacman -y install pacman -Syu --noconfirm \
+    && pacman -y install pacman -Sy --noconfirm \
        python \
        python-setuptools \
        python-wheel \
@@ -23,7 +23,6 @@ RUN pacman -Sy --noconfirm archlinux-keyring && pacman -Syu --noconfirm \
        gcc-fortran \
        rust \
        mono \
-       ncurses \
        mesa \
        java-environment=11 \
        git \
