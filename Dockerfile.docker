@@ -28,11 +28,9 @@ RUN pacman -Sy --noconfirm archlinux-keyring && pacman -Syu --noconfirm \
        git \
        cppcheck \
        ruby \
-       rake \
+       ruby-bundler
+       ruby-rake \
     && ln -s /usr/lib/systemd/systemd /sbin/init
-
-RUN gem install \
-        bundler
 
 RUN pip3 -q install --upgrade pip \
     && python3 -m pip -q install \
