@@ -26,6 +26,7 @@ RUN pacman -Sy --noconfirm archlinux-keyring && pacman -Syu --noconfirm \
        mesa \
        java-environment=11 \
        git \
+       ccache \
        cppcheck \
        ruby \
        ruby-bundler \
