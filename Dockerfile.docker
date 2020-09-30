@@ -26,12 +26,14 @@ RUN pacman -Sy --noconfirm archlinux-keyring && pacman -Syu --noconfirm \
        mesa \
        java-environment=11 \
        git \
+       gtk3 \
+       gtkmm3 \
+       gobject-introspection \
        ccache \
        cppcheck \
        ruby \
        ruby-bundler \
        ruby-rake \
-       gnustep-base \
     && ln -s /usr/lib/systemd/systemd /sbin/init
 
 RUN pip3 -q install --upgrade pip \
