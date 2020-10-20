@@ -17,6 +17,7 @@ RUN pacman -Sy --noconfirm archlinux-keyring && pacman -Syu --noconfirm \
        python-wheel \
        python-pip \
        sudo \
+       clang \
        gcc \
        gcc-d \
        gcc-fortran \
@@ -33,7 +34,6 @@ RUN pip3 -q install --upgrade pip \
     && python3 -m pip -q install \
        meson==0.55.3 \
        pyinstaller==4.0 \
-       scan-build==2.0.19 \
        ninja==1.10.0.post2 \
        cmake==3.18.2 \
        PyQt5==5.15.1 \
