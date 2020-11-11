@@ -10,7 +10,7 @@ ENV CI 1
 
 ADD run_tests.py .
 
-RUN pacman -Sy --noconfirm archlinux-keyring && pacman -Syu --noconfirm \
+RUN pacman -Syu --noconfirm \
     && pacman -Syu --noconfirm \
        python \
        python-setuptools \
