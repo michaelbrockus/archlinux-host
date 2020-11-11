@@ -2,7 +2,7 @@
 # author: Michael Brockus.
 # gmail: mailto:michaelbrockus@gmail.com
 #
-FROM archlinux:latest
+FROM archlinux:base
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LANG 'C.UTF-8'
@@ -27,8 +27,7 @@ RUN pacman -Syu --noconfirm \
        java-environment=11 \
        git \
        ccache \
-       cppcheck \
-    && ln -s /usr/lib/systemd/systemd /sbin/init
+       cppcheck
 
 RUN pip3 -q install --upgrade pip \
     && python3 -m pip -q install \
