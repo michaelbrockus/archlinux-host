@@ -27,7 +27,8 @@ RUN pacman -Syu --noconfirm \
        java-environment=11 \
        git \
        ccache \
-       cppcheck
+       cppcheck \
+       openssl
 
 RUN pip3 -q install --upgrade pip \
     && python3 -m pip -q install \
