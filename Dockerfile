@@ -42,4 +42,3 @@ RUN pip3 -q install --upgrade pip \
        pytest-xdist==2.1.0 \
        pytest-benchmark==3.2.3
 
-CMD [ "pytest", "-v", "run_tests.py"]
