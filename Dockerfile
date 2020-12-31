@@ -18,9 +18,7 @@ RUN pacman -Syu --noconfirm \
        clang \
        gcc \
        gcc-d \
-       gcc-fortran \
        rust \
-       mono \
        mesa \
        java-environment=11 \
        git \
