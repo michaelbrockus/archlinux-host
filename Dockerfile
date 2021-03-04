@@ -25,7 +25,7 @@ RUN pacman -Syu --noconfirm \
        ccache \
        cppcheck \
        pkg-config \
-       openssl
+       openssl-1.0
 
 RUN pip3 -q install --upgrade pip \
     && python3 -m pip -q install \
